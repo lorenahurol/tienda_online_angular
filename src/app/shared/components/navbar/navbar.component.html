@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+    @if(usersService.isLogged()) {
+        <li [routerLink]="['/products']">Lista de productos</li>
+        <li [routerLink]="['/products', 'new']">Nuevo producto</li>
+    }@else {
+        <li [routerLink]="['/login']">Login</li>
+        <li [routerLink]="['/register']">Register</li>
+    }
+</ul>
+</nav>

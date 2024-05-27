@@ -1,0 +1,9 @@
+<!-- Hay que llamar al signal como si fuera una funcion -->
+<div class="product-card">
+    <h3> {{ product().name }}</h3>
+    <p> {{product().description}}</p>
+    <p> Precio: {{product().price}}</p>
+    <p> Departamento: {{product().department}}</p>
+    <button class="btn btn-danger" (click)="onClickBorrar()">Borrar</button>
+</div>
+

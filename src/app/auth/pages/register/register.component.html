@@ -1,0 +1,28 @@
+<h2 class="my-4">User Register</h2>
+
+<form [formGroup]="formRegister" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="inputName">Nombre</label>
+        <input type="text" id="inputName" class="form-control" formControlName="name">
+    </div>
+
+    <div class="mb-3">
+        <label for="inputEmail">Email</label>
+        <input type="text" id="inputEmail" class="form-control" formControlName="email">
+    </div>
+
+    <div class="mb-3">
+        <label for="inputPassword">Password</label>
+        <input type="text" id="inputPassword" class="form-control" formControlName="password">
+    </div>
+
+    <div class="mb-3">
+        <label for="inputRole" class="form-label">Role</label>
+        <select id="inputRole" class="form-select" formControlName="role">
+            <option value="regular">Regular</option>
+            <option value="admin">Admin</option>
+        </select>
+    </div>
+
+    <input type="submit" value="Enviar" class="btn btn-info">
+</form>

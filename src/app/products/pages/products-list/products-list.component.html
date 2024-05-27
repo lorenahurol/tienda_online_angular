@@ -1,0 +1,8 @@
+<h1>Lista de productos</h1>
+<div class="products row">
+    @for (prod of arrProducts; track prod._id) {
+        <div class="col-12 col-sm-6 col-md-3">
+            <app-product-card [product]="prod" (productoBorrado)="onProductoBorrado($event)"></app-product-card>
+        </div>
+    }
+</div>

@@ -1,0 +1,16 @@
+<h2 class="my-4">User Login</h2>
+
+<form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="inputEmail">Email</label>
+        <input type="text" id="inputEmail" class="form-control" formControlName="email">
+    </div>
+
+    <div class="mb-3">
+        <label for="inputPassword">Password</label>
+        <input type="text" id="inputPassword" class="form-control" formControlName="password">
+    </div>
+
+    <input type="submit" value="Enviar" class="btn btn-info">
+</form>
+
